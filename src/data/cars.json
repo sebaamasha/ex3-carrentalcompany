@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Koenigsegg",
+      "type": "Sport",
+      "capacity": "2 Person",
+      "price_per_day": 99.00,
+      "rating": 4.8,
+      "review_count": 250,
+      "fuel_type": "Gasoline",
+      "transmission": "Manual",
+      "fuel_capacity": "70L",
+      "image": "/images/koenigsegg.jpg",
+      "favorite": false
+    },
+    {
+      "id": 2,
+      "name": "Nissan GT - R",
+      "type": "Sport",
+      "capacity": "2 Person",
+      "price_per_day": 82.00,
+      "rating": 4.5,
+      "review_count": 440,
+      "fuel_type": "Gasoline",
+      "transmission": "Manual",
+      "fuel_capacity": "80L",
+      "image": "/images/nissan_gtr.jpg",
+      "favorite": true
+    },
+    {
+      "id": 3,
+      "name": "Rolls-Royce",
+      "type": "Coupe",
+      "capacity": "4 Person",
+      "price_per_day": 96.00,
+      "rating": 4.9,
+      "review_count": 310,
+      "fuel_type": "Gasoline",
+      "transmission": "Automatic",
+      "fuel_capacity": "100L",
+      "image": "/images/rolls_royce.jpg",
+      "favorite": false
+    }
+  ]
+  
