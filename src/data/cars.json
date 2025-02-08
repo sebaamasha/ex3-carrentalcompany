@@ -15,7 +15,9 @@
     "description": "The Koenigsegg is a masterpiece of engineering, offering unparalleled speed and innovation for the ultimate driving experience.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 2,
@@ -33,7 +35,9 @@
     "description": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the 'race track'.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 3,
@@ -51,7 +55,9 @@
     "description": "Rolls-Royce redefines luxury with its handcrafted excellence and unmatched comfort for the ultimate travel experience.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 4,
@@ -69,7 +75,9 @@
     "description": "The Tesla Model S combines cutting-edge technology with sustainable performance, setting a new standard for electric vehicles.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 5,
@@ -87,7 +95,9 @@
     "description": "The BMW X5 offers a blend of power, luxury, and practicality, making it the perfect choice for family adventures.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 6,
@@ -105,7 +115,9 @@
     "description": "The Audi Q7 combines advanced technology with spacious interiors, delivering an unmatched driving experience for large families.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 7,
@@ -123,7 +135,9 @@
     "description": "The Ford Mustang is an iconic muscle car, delivering thrilling performance and bold design that turns heads everywhere.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 8,
@@ -141,7 +155,9 @@
     "description": "The Porsche 911 embodies precision engineering and timeless style, making it a true driver's car.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   },
   {
     "id": 9,
@@ -159,6 +175,8 @@
     "description": "The Honda Civic combines affordability, reliability, and fuel efficiency, making it a top choice for daily commuting.",
     "fuel_capacity_icon": "/images/gas-station.png",
     "capacity_icon" : "/images/profile-2user.png",
-    "transmission_icon" : "/images/Car9.png"
+    "transmission_icon" : "/images/Car9.png",
+    "view2": "/images/view2.png",
+    "view3": "/images/view3.png"
   }
 ]
