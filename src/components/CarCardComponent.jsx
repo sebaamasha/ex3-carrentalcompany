@@ -1,51 +1,85 @@
-import React, { useState } from 'react';
-import { Card, CardMedia, CardContent, Typography, Button, IconButton } from '@mui/material';
-import { Favorite, FavoriteBorder } from '@mui/icons-material';
+import React from 'react';
+import { Favorite } from '@mui/icons-material';
 
-function CarCard({ car }) {
-  const [isFavorite, setIsFavorite] = useState(car.favorite);
-
-  const handleFavoriteToggle = () => {
-    setIsFavorite(!isFavorite);
-  };
-
+function CarCard({ car, onClick, onFavoriteToggle }) {
   return (
-    <Card style={{ borderRadius: '15px', boxShadow: '0 2px 5px rgba(0,0,0,0.2)' }}>
+    <div
+      onClick={onClick}
+      style={{
+        border: '1px solid #EDEDED',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        padding: '15px',
+        width: '250px',
+        cursor: 'pointer',
+        textAlign: 'left',
+      }}
+    >
       {/* תמונת הרכב */}
-      <CardMedia
-        component="img"
-        height="140"
-        image={car.image}
+      <img
+        src={car.image}
         alt={car.name}
+        style={{
+          width: '100%',
+          height: '150px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        }}
       />
 
-      {/* פרטי הרכב */}
-      <CardContent>
-        <Typography variant="h6" style={{ fontWeight: 'bold' }}>
-          {car.name}
-        </Typography>
-        <Typography variant="body2" style={{ color: '#757575' }}>
-          {car.type}
-        </Typography>
-        <Typography variant="body1" style={{ fontWeight: 'bold', marginTop: '10px' }}>
-          ${car.price_per_day} / day
-        </Typography>
+      {/* שם וסוג הרכב */}
+      <div style={{ marginTop: '10px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 'bold' }}>{car.name}</h3>
+          <Favorite
+            onClick={(e) => {
+              e.stopPropagation(); // מניעת לחיצה על כרטיס הרכב
+              onFavoriteToggle(car); // קריאה לפונקציה לעדכון המועדפים
+            }}
+            style={{
+              color: car.favorite ? 'red' : 'gray', // שינוי צבע הלב בהתאם למצב
+              cursor: 'pointer',
+            }}
+          />
+        </div>
+        <p style={{ margin: '5px 0', color: '#8A8A8A', fontSize: '14px' }}>{car.type}</p>
+      </div>
 
-        {/* כפתור לב */}
-        <IconButton onClick={handleFavoriteToggle} style={{ color: isFavorite ? '#f44336' : '#757575' }}>
-          {isFavorite ? <Favorite /> : <FavoriteBorder />}
-        </IconButton>
+      {/* מידע נוסף */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px', fontSize: '12px', color: '#8A8A8A' }}>
+        <div>
+          <img src={car.fuel_capacity_icon} alt="Fuel" style={{ width: '16px', marginRight: '5px' }} />
+          {car.fuel_capacity}
+        </div>
+        <div>
+          <img src={car.transmission_icon} alt="Transmission" style={{ width: '16px', marginRight: '5px' }} />
+          {car.transmission}
+        </div>
+        <div>
+          <img src={car.capacity_icon} alt="Capacity" style={{ width: '16px', marginRight: '5px' }} />
+          {car.capacity}
+        </div>
+      </div>
 
-        {/* כפתור Rent Now */}
-        <Button
-          variant="contained"
-          color="primary"
-          style={{ float: 'right', marginTop: '-40px', borderRadius: '20px' }}
+      {/* מחיר וכפתור השכרה */}
+      <div style={{ marginTop: '15px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <p style={{ margin: 0, fontSize: '18px', fontWeight: 'bold' }}>${car.price_per_day} / day</p>
+        <button
+          style={{
+            backgroundColor: '#3563E9',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            padding: '10px 15px',
+            fontSize: '14px',
+            cursor: 'pointer',
+          }}
         >
           Rent Now
-        </Button>
-      </CardContent>
-    </Card>
+        </button>
+      </div>
+    </div>
   );
 }
 
