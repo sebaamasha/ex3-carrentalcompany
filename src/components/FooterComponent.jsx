@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography, Link, Grid } from '@mui/material';
-import { ForkRight, Style } from '@mui/icons-material';
 
 function Footer() {
   return (
@@ -16,7 +15,6 @@ function Footer() {
       }}
     >
       <Grid container spacing={3} sx={{ paddingBottom: '20px' }}>
-        {/* לוגו ומשפט חזון */}
         <Grid item xs={12} sm={4}>
           <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#1976d2' }}>
             ShenCarCar
@@ -33,7 +31,6 @@ function Footer() {
           </Typography>
         </Grid>
         
-        {/* קישורים: About */}
         <Grid item xs={12} sm={2} sx={{ textAlign: 'left' }} style={{position : 'relative', left : '20%'}}> {/* יישור לשמאל */}
           <Typography
             variant="subtitle1"
@@ -89,7 +86,6 @@ function Footer() {
           </Link>
         </Grid>
 
-        {/* קישורים: Community */}
         <Grid item xs={12} sm={2} sx={{ textAlign: 'left' }} style={{position : 'relative', left : '20%'}}> {/* יישור לשמאל */}
           <Typography
             variant="subtitle1"
@@ -145,7 +141,6 @@ function Footer() {
           </Link>
         </Grid>
 
-        {/* קישורים: Socials */}
         <Grid item xs={12} sm={2} sx={{ textAlign: 'left' }} style={{position : 'relative', left : '20%'}}> {/* יישור לשמאל */}
           <Typography
             variant="subtitle1"
@@ -202,7 +197,6 @@ function Footer() {
         </Grid>
       </Grid>
       
-      {/* שורת זכויות יוצרים */}
       <Box
         sx={{
           display: 'flex',
